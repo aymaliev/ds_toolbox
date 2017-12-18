@@ -1,0 +1,234 @@
+RemoveToolTip:
+SetTimer, RemoveToolTip, Off
+ToolTip
+return
+
+ClipVar1 :=
+ClipVar2 :=
+ClipVar3 :=
+ClipVar4 :=
+ClipVar5 :=
+ClipVar6 :=
+ClipVar7 :=
+ClipVar8 :=
+ClipVar9 :=
+ClipVar0 :=
+
+^!Numpad1::
+tooltip Copying 1. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar1 := ClipboardAll
+tooltip Copied into Numpad_1
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad1::
+tooltip Pasting 1. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar1
+Send {Ctrl Down}v{Ctrl Up}
+tooltip Pasted from Numpad_1
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad2::
+tooltip Copying 2. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar2 := ClipboardAll
+tooltip Copied into Numpad_2
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad2::
+tooltip Pasting 2. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar2
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_2
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad3::
+tooltip Copying 3. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar3 := ClipboardAll
+tooltip Copied into Numpad_3
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad3::
+tooltip Pasting 3. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar3
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_3
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad4::
+tooltip Copying 4. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar4 := ClipboardAll
+tooltip Copied into Numpad_4
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad4::
+tooltip Pasting 4. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar4
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_4
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad5::
+tooltip Copying 5. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar5 := ClipboardAll
+tooltip Copied into Numpad_5
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad5::
+tooltip Pasting 5. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar5
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_5
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad6::
+tooltip Copying 6. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar6 := ClipboardAll
+tooltip Copied into Numpad_6
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad6::
+tooltip Pasting 6. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar6
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_6
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad7::
+tooltip Copying 7. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar7 := ClipboardAll
+tooltip Copied into Numpad_7
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad7::
+tooltip Pasting 7. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar7
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_7
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad8::
+tooltip Copying 8. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar8 := ClipboardAll
+tooltip Copied into Numpad_8
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad8::
+tooltip Pasting 8. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar8
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_8
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad9::
+tooltip Copying 9. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar9 := ClipboardAll
+tooltip Copied into Numpad_9
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad9::
+tooltip Pasting 9. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar9
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_9
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
+
+^!Numpad0::
+tooltip Copying 0. Please wait
+curclip := ClipboardAll
+Send {Ctrl Down}c{Ctrl Up}
+ClipWait
+ClipVar0 := ClipboardAll
+tooltip Copied into Numpad_0
+SetTimer, RemoveToolTip, 2000
+clipboard := curclip
+return
+
+^Numpad0::
+tooltip Pasting 0. Please wait
+curclip := ClipboardAll
+clipboard := ClipVar0
+Send {Ctrl Down}v{Ctrl Up}
+ClipWait
+tooltip Pasted from Numpad_0
+clipboard := curclip
+SetTimer, RemoveToolTip, 2000
+return
